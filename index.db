@@ -1,0 +1,12 @@
+-- show databases -- 
+-- create database maruf;
+-- create database phitron;
+-- drop database maruf;
+-- use phitron;
+create table student( 
+	Roll INT,
+    Name VARCHAR( 30 )
+);
+
+-- RENAME TABLE student to person;
+-- drop table person;
