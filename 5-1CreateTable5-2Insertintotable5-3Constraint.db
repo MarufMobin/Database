@@ -1,0 +1,21 @@
+create table student( 
+	Roll int unique not null primary key,
+    Name varchar(30) not null,
+    contactNo char(11) unique,
+    Email varchar(30),
+    constraint unique(Email)
+    );
+    
+INSERT INTO student( 
+	Roll, Name, contactNo, Email )
+VALUES
+	(101, "Maruf", "0191955383","mobinh264@gmail.com");
+
+INSERT INTO student( 
+	Roll, Name, contactNo, Email )
+VALUES
+	(102, "Mubin", "0191955380","marufmubin@gmail.com");
+
+select * from student;
+-- use phitron;
+-- drop table student;
