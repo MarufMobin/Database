@@ -1,0 +1,27 @@
+-- use phitron;
+create table studenttwo(
+	Roll int,
+    Name varchar(30),
+    contactNo char(11),
+    Email varchar(30)
+);
+INSERT INTO studenttwo( 
+	Roll, Name, contactNo, Email )
+VALUES
+	(101, "Maruf", "0191955383","mobinh264@gmail.com");
+
+INSERT INTO studenttwo( 
+	Roll, Name, contactNo, Email )
+VALUES
+	(102, "Mubin", "0191955380","marufmubin@gmail.com");
+ 
+    
+select * from studenttwo;
+
+set sql_safe_updates = 0;
+update studenttwo 
+set Name="maruf",contactNo="01322409861" 
+where Roll=101;
+set sql_safe_updates = 1;
+
+delete from studenttwo where Roll=102;
