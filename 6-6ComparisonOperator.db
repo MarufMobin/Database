@@ -1,0 +1,30 @@
+-- select * 
+-- from employees
+
+select first_name, salary 
+from employees
+where salary = 9000;
+
+select first_name, salary 
+from employees
+where salary != 9000;
+
+select first_name, salary 
+from employees
+where salary > 9000;
+
+select first_name, salary 
+from employees
+where salary < 9000;
+
+select first_name, salary 
+from employees
+where salary <= 9000;
+
+select first_name, salary 
+from employees
+where salary >= 9000;
+
+select first_name, salary 
+from employees
+where salary between 9000 and 15000;
