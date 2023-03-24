@@ -1,0 +1,9 @@
+select *
+from employees
+where first_name = "Steven" and salary > 20000;
+
+select * from employees 
+where salary > 2000 and last_name = "Austin";
+
+select * from employees 
+where salary > 12000 or job_id = "IT_PROG";
