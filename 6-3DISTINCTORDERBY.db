@@ -1,0 +1,16 @@
+-- select * from countries;
+select country_name from countries;
+select country_id from countries;
+
+-- select region_id from countries;
+
+-- select distinct region_id
+-- from countries;
+
+select * 
+from departments
+order by manager_id asc;
+
+select * 
+from departments
+order by manager_id desc;
