@@ -1,0 +1,35 @@
+-- in 
+select *
+from employees
+where job_id in ("AC_ACCOUNT","AC_MGR", "AD_ASST" );
+
+-- not in  
+select *
+from employees
+where job_id not in ("AC_ACCOUNT","AC_MGR", "AD_ASST" );
+
+-- Like 
+select * 
+from employees 
+where first_name like "S%";
+
+-- AS
+select first_name as maruf
+from employees;-- in 
+select *
+from employees
+where job_id in ("AC_ACCOUNT","AC_MGR", "AD_ASST" );
+
+-- not in  
+select *
+from employees
+where job_id not in ("AC_ACCOUNT","AC_MGR", "AD_ASST" );
+
+-- Like 
+select * 
+from employees 
+where first_name like "S%";
+
+-- AS
+select first_name as maruf
+from employees;
