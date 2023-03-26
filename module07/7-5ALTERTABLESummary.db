@@ -1,0 +1,4 @@
+-- ALTER TABLE
+
+ALTER TABLE table_name
+ADD phone_no CHAR(11);
