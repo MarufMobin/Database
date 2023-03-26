@@ -1,0 +1,25 @@
+use hr;
+
+-- MAX
+select MAX(salary)
+from employees;
+
+-- MIN
+select min(salary)
+from employees;
+
+-- COUNT
+select count( * )
+from employees;
+
+-- COUNT
+select count( employee_id )
+from employees;
+
+-- SUM
+select sum(salary)
+from employees;
+
+-- AVG	
+select AVG( salary )
+from employees;
