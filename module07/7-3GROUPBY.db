@@ -1,0 +1,25 @@
+use hr;
+-- COUNT
+select  job_id , count(*) as employee
+from employees
+group by job_id;
+
+-- MAX
+select job_id, max(salary)
+from employees
+group by job_id;
+
+-- SUM
+select job_id, sum(salary)
+from employees
+group by job_id;
+
+-- AVG 
+select job_id, avg(salary)
+from employees
+group by job_id;
+
+-- How many Last name
+select last_name
+from employees
+group by last_name;
