@@ -1,0 +1,45 @@
+-- upper 
+select upper("this is a pen") as " ";
+-- lower 
+
+select lower("THIS IS A PEN") as " ";
+-- PI 
+select pi();
+
+-- Round 
+select round(135.75);
+
+-- COS
+select cos(0); 
+select cos(30);
+select cos(90);
+
+-- Radians 
+select cos(radians(90)); 
+
+-- CEIL
+select CEIL(135.375); 
+
+-- Floor
+select floor(135.375); 
+
+-- log
+select log(2);
+
+-- truncate
+select truncate(135.358, 2);
+
+-- LN 
+select LN(2);
+
+-- log2
+select log2(2);
+
+-- log10
+select log10(10);
+
+-- cos pi 
+select cos(pi());
+
+-- SQRT 
+select sqrt(100);
