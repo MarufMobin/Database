@@ -1,0 +1,20 @@
+-- using database 
+use hr;
+
+-- using join and using keyword here
+SELECT employees.employee_id, employees.first_name, departments.department_name
+FROM employees JOIN departments USING ( department_id );
+
+SELECT e.employee_id, e.first_name, d.department_name
+FROM employees e JOIN departments d USING ( department_id );
+
+SELECT employee_id, first_name, department_name
+FROM employees e JOIN departments d USING ( department_id );
+
+-- join on keyword using here 
+SELECT employee_id, first_name, department_name
+FROM employees JOIN departments ON ( employees.department_id = departments.department_id );
+
+-- Using elis join on keyword using here
+SELECT e.employee_id, e.first_name, d.department_name
+FROM employees e JOIN departments d ON ( e.department_id = d.department_id );
