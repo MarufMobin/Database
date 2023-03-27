@@ -1,0 +1,7 @@
+-- using database 
+use hr;
+
+-- Self Loop 
+select e.first_name , m.first_name
+from employees e join employees m 
+on ( e.manager_id = m.employee_id )
