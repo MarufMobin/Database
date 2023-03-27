@@ -1,0 +1,18 @@
+------ SELECT STATEMENT --------
+select --> * or spacific 
+from --> table name
+where --> condition 
+group by --> if we need a group 
+having --> when we are giving group by any condition the using having  
+order by --> there are two types of order asc / desc
+
+
+----- DROP Statement ---- 
+drop table table_name 
+
+----- DELETE Statement  ---- 
+delete from table_name 
+where roll = 102 
+
+--- Truncate Statement ---- 
+truncate table table_name;
