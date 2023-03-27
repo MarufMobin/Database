@@ -1,0 +1,20 @@
+-- using hr database 
+use hr;
+
+-- employee table using 
+select * 
+from employees;
+
+-- departments 
+select * 
+from departments;
+
+-- with out join show data 
+select e.employee_id, e.first_name, d.department_name
+from employees e, departments d
+where e.department_id = d.department_id; 
+
+-- with out using alis 
+select employee_id, first_name, department_name
+from employees, departments
+where employees.department_id = departments.department_id;

@@ -20,4 +20,4 @@ from employees
 where employee_id != 107 and salary = 
 ( select salary
 from employees 
-where employee_id = 107 );
+where employee_id = 107 );  
