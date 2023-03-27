@@ -1,0 +1,23 @@
+-- Using hr table 
+use hr;
+
+-- TABLE Showing there
+SELECT *
+FROM employees;
+
+-- Who get salary less then diana 
+select first_name, salary
+from employees
+where salary = 
+( select salary
+from employees 
+where employee_id = 107 );
+
+-- find a employee who's salary equal to 
+-- diana but which is not diana 
+select first_name, salary
+from employees 
+where employee_id != 107 and salary = 
+( select salary
+from employees 
+where employee_id = 107 );
