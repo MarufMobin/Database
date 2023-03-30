@@ -1,0 +1,77 @@
+-- using database 
+use phitron;
+
+-- database table delete if it's exist's 
+DROP TABLE IF EXISTS student;
+
+-- New table create 
+create table student(
+	son int(11) primary key,
+    sname varchar(20),
+    age int(11)
+);
+
+-- Insert value student table 
+insert into student( son, sname, age)
+values ( 1, "Maruf", 17),
+		( 2, "Ramaya", 18),
+        ( 3, "Mobin", 16);
+
+-- Select data in student table 
+select * 
+from student;
+
+-- Drop table if it is exist 
+drop table if exists course;
+
+-- Create table here
+create table course( 
+	cno int(11) primary key,
+    cname varchar( 20)
+);
+
+-- Insert table data 
+insert into course( cno, cname)
+values ( 101, 'c'),
+		( 102, 'c++'),
+        ( 103, 'DBMS');
+
+-- Course table data insert 
+select * 
+from course;
+
+-- crete table using foreign key also multiple primary key
+
+create table enroll( 
+	son int,
+    cno int,
+    jdate date,
+    primary key( son, cno),
+    foreign key ( son )
+		references student( son)
+        on delete cascade,
+	foreign key( cno )
+		references course( cno )
+        on delete cascade
+);
+--  Enroll table data insert are here 
+insert into enroll( son , cno, jdate )
+values( 1, 101, '2004-01-06'),
+		( 1, 102, '2004-01-06'),
+        ( 2, 103, '2004-01-06');
+        
+-- select enroll table datas 
+select * 
+from enroll;
+
+-- Delete table here
+set sql_safe_updates = 0;
+
+delete from student
+where sname = "Ramaya";
+
+set sql_safe_updates = 1;
+
+select * from student;
+
+select * from enroll;
